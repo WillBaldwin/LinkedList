@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C5F80730-F44F-4478-BDAE-6634EFC2CA88}</ProjectGuid>
+    <RootNamespace>LinkedList</RootNamespace>
+    <ProjectName>LinkedList</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>
+    </PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Arduino\hardware\arduino\avr\cores\arduino;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\hardware\avr\1.1.2\variants\promicro;D:\Users\Will\OneDrive\Documents\Visual Studio 2015\Projects\LinkedList\LinkedList;D:\Arduino\libraries;D:\Arduino\hardware\arduino\avr\libraries;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\hardware\avr\1.1.2\libraries;D:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\rjwmxn3s.zym\Micro Platforms\default\debuggers;D:\Users\Will\OneDrive\Documents\Arduino\libraries;D:\Users\Will\OneDrive\Documents\Visual Studio 2015\Projects\LinkedList\LinkedList;D:\Arduino\hardware\arduino\avr\cores\arduino;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\hardware\avr\1.1.2\variants\promicro;D:\Arduino\libraries;D:\Arduino\hardware\arduino\avr\libraries;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\hardware\avr\1.1.2\libraries;D:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\rjwmxn3s.zym\Micro Platforms\default\debuggers;D:\Users\Will\OneDrive\Documents\Arduino\libraries;D:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\rjwmxn3s.zym\Micro Platforms\default\debuggers\VM_DBG;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\tools\avr-gcc\4.8.1-arduino5\4.8.1-arduino5\include;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\tools\avr-gcc\4.8.1-arduino5\4.8.1-arduino5\include;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\tools\avr-gcc\4.8.1-arduino5\lib\gcc\avr\4.8.1\include;C:\Users\Will\AppData\Roaming\arduino15\packages\SparkFun\tools\avr-gcc\4.8.1-arduino5\lib\gcc\avr\4.8.1\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>D:\Users\Will\OneDrive\Documents\Visual Studio 2015\Projects\LinkedList\LinkedList\__vm\.LinkedList.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
+      <PreprocessorDefinitions>__AVR_ATmega32u4__;__AVR_ATmega32U4__;_VMDEBUG=1;F_CPU=8000000L;ARDUINO=150;ARDUINO_AVR_FIOV3;ARDUINO_ARCH_AVR;USB_VID=0x1B4F;USB_PID=0xF101;__cplusplus=201103L;GCC_VERSION=40801;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="LinkedList.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LinkedListLib.h" />
+    <ClInclude Include="__vm\.LinkedList.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\_micro-api\libraries\LinkedListLib\library.properties" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
